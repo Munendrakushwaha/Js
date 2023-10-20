@@ -1,3 +1,144 @@
+// USING NORMAL FUNCTION
+
+// const datas =[
+//     {name:"Ajay",Profession:"Software Engineer"},
+//     {name:"Anuj",Profession:"Software Engineer"}
+// ];
+
+// function getDatas(){
+//     setTimeout(()=>
+//     {
+//         let output="";
+//         datas.forEach((data,index)=>{
+//             output+=`<li>${data.name}</li>`;
+//         })
+//         document.body.innerHTML=output;
+//     },1000)
+// }
+
+// function createdata(newdata){
+//     setTimeout(()=>{
+//         datas.push(newdata);
+       
+//     },2000)
+// }
+
+// getDatas();
+// createdata({name:"Monu",Profession:"Software Engineer"},getDatas);
+
+
+
+//  USING CALLBACKS
+
+
+// const datas =[
+//     {name:"Ajay",Profession:"Software Engineer"},
+//     {name:"Anuj",Profession:"Software Engineer"}
+// ];
+
+// function getDatas(){
+//     setTimeout(()=>
+//     {
+//         let output="";
+//         datas.forEach((data,index)=>{
+//             output+=`<li>${data.name}</li>`;
+//         })
+//         document.body.innerHTML=output;
+//     },1000)
+// }
+
+// function createdata(newdata,callback){
+//     setTimeout(()=>{
+//         datas.push(newdata);
+//         callback();
+//     },2000)
+// }
+
+// // getDatas();
+// createdata({name:"Monu",Profession:"Software Engineer"},getDatas);
+
+
+// USING PROMISES
+
+
+// const datas =[
+//     {name:"Ajay",Profession:"Software Engineer"},
+//     {name:"Anuj",Profession:"Software Engineer"}
+// ];
+
+// function getDatas(){
+//     setTimeout(()=>
+//     {
+//         let output="";
+//         datas.forEach((data,index)=>{
+//             output+=`<li>${data.name}</li>`;
+//         })
+//         document.body.innerHTML=output;
+//     },1000)
+// }
+
+// function createdata(newdata){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//            datas.push(newdata);
+//            let error=false;
+//            if(!error)
+//            {
+//             resolve();
+//            }
+//            else
+//            {
+//             reject("error");
+//            }
+//         },2000)
+//     })
+// }
+
+// // getDatas();
+// createdata({name:"Monu",Profession:"Software Engineer"}).then(getDatas);
+
+// USING ASYNC AND AWAIT
+
+
+// const datas =[
+//     {name:"Ajay",Profession:"Software Engineer"},
+//     {name:"Anuj",Profession:"Software Engineer"}
+// ];
+
+// function getDatas(){
+//     setTimeout(()=>
+//     {
+//         let output="";
+//         datas.forEach((data,index)=>{
+//             output+=`<li>${data.name}</li>`;
+//         })
+//         document.body.innerHTML=output;
+//     },10)
+// }
+
+// function createdata(newdata){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             datas.push(newdata);
+//             resolve();
+//         },2000)
+//     })
+// }
+
+// async function caller()
+// {
+//     console.log(new Date().getTime());
+//     const ans = await createdata({name:"Mohit",Profession:"Project Manager"});
+//     console.log(new Date().getTime());
+//     getDatas();
+// }
+
+// caller();
+
+
+
+
+
 // Creation of promise
 // Do an async task
 // DB calls, cryptography, network
